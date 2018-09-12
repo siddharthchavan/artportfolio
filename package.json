@@ -1,0 +1,22 @@
+{
+  "name": "artportfolio",
+  "version": "1.0.0",
+  "description": "Art Portfolio 9th Grade",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siddharthchavan/artportfolio.git"
+  },
+  "author": "SC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siddharthchavan/artportfolio/issues"
+  },
+  "homepage": "https://github.com/siddharthchavan/artportfolio#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
