@@ -16,8 +16,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="styles/cycle1.css"/>
     <link href="styles/styles.css" rel="stylesheet">
-    <link href="album.css" rel="stylesheet">\
+    <link href="album.css" rel="stylesheet">
 
   </head>
 
@@ -42,11 +43,11 @@
               Cycles <span class="sr-only">(current)</span>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="cycle1.html">Cycle 1</a>
+              <a class="dropdown-item active" href="cycle1.html">Cycle 1</a>
               <a class="dropdown-item" href="cycle2.html">Cycle 2</a>
               <a class="dropdown-item" href="cycle3.html">Cycle 3</a>
               <a class="dropdown-item" href="cycle4.html">Cycle 4</a>
-              <a class="dropdown-item active" href="cycle5.html">Cycle 5</a>
+              <a class="dropdown-item" href="cycle5.html">Cycle 5</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="redirect.html">Something else here</a>
             </div>
@@ -62,37 +63,42 @@
       </div>
     </nav>
 
-    <main role="main" id="top">
+    <main role="main" class="bg" id="top">
 
       <div>
         <br>
         <br>
       </div>
 
-      <section class="jumbotron text-center">
-        <div class="container">
-          <h1 class="jumbotron-heading">Cycle 5</h1>
-          <p class="lead text-muted">
-            This is all my artwork from Cycle 5.
-          </p>
-          <p>
-            <a href="#" class="btn btn-primary my-2">My Favorite Project</a>
-            <a href="#" class="btn btn-secondary my-2">A Random Piece</a>
-          </p>
-        </div>
-      </section>
 
-      <div class="album py-5 bg-light border-test padding-adj">
+      <div class="container jumbotron text-center transparent">
+        <h1 class="jumbotron-heading">Cycle 1</h1>
+        <p class="lead">
+          This is all my artwork from Cycle 1.
+          Whether it was made in Art class, for another assignment, or just for fun,
+          it can be found here.
+        </p>
+        <p>
+          <button href="#card1" class="btn btn-primary my-2" type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#img1">My Favorite Project</button>
+          <a href="#" class="btn btn-secondary my-2">A Random Piece</a>
+        </p>
+      </div>
+
+      <div class="album py-5 border-test padding-adj transparent">
         <div class="container">
           <div class="row">
 
             <div class="col-md-4">
             <!-- beginning of card -->
-              <div class="card mb-4 box-shadow">
+              <div class="card mb-4 box-shadow" id="card1">
                 <img class="card-img-top" src="img/colormatch1.jpg" alt="This image does not exist yet">
                 <div class="card-body">
                   <p class="card-text">
-                    Test
+                    <i>Color Match 1</i><br />
+                    <b>Photograph</b><br />
+                    This cycle, we studied colors and we each chose a color dot.
+                    I took a dark blue-grey one, and found two matches in my house.
+                    The first one is my Xbox Elite Controller.
                   </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
@@ -106,13 +112,13 @@
                   <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="img1Label">Test</h5>
+                        <h5 class="modal-title" id="img1Label">Color Match 1</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
                       <div class="modal-body">
-                        <img class="img img-responsive" src="img/lowaperture.jpg" alt="This image does not exist yet" style="max-width:450px;display:block;margin-left:auto;margin-right:auto">
+                        <img class="img img-responsive" src="img/colormatch1.jpg" alt="This image does not exist yet" style="max-width:450px;display:block;margin-left:auto;margin-right:auto">
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -127,13 +133,13 @@
             <div class="col-md-4">
             <!-- beginning of card -->
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="img/lowaperture.jpg" alt="This image does not exist yet">
+                <img class="card-img-top" src="img/colormatch2.jpg" alt="This image does not exist yet">
                 <div class="card-body">
                   <p class="card-text">
-                    Test
-                    <br>
-                    <br>
-                    <br>
+                    <i>Color Match 2</i><br />
+                    <b>Photograph</b><br />
+                    This is my second color match:
+                    The Logitech Z207 Speakers.
                   </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
@@ -141,13 +147,15 @@
                     </div>
                     <small class="text-muted">9/3/2018</small>
                   </div>
+                  <br />
+                  <br />
                 </div>
                 <!-- modal -->
                 <div class="modal fade" id="img2" tabindex="-1" role="dialog" aria-labelledby="img2Label" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="img2Label">Test</h5>
+                        <h5 class="modal-title" id="img2Label">Color Match - Logitech Z207 Speakers</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
@@ -168,15 +176,43 @@
             <div class="col-md-4">
             <!-- beginning of card -->
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="This image does not exist yet">
+                <img class="card-img-top" src="img/swatches.jpg" alt="This image does not exist yet">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">
+                    <i>Color Swatches</i><br />
+                    <b>Acrylic on watercolor paper</b><br />
+                    After I had found matches for my colors,
+                    I mixed paints until I got a good match to my color dot.
+                    This took quite a while, but I eventually got it.
+                    I used only white, black, and blue paints to mix this color,
+                    and as you can see, it took several tries before I mixed the right match.
+                  </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#img3">View</button>
                     </div>
-                    <small class="text-muted">9 mins</small>
+                    <small class="text-muted">9/13/2018</small>
+                  </div>
+                  <br />
+                  <br />
+                </div>
+                <!-- modal -->
+                <div class="modal fade" id="img3" tabindex="-1" role="dialog" aria-labelledby="img3Label" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="img3Label">Color Swatches</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img class="img img-responsive" src="img/swatches.jpg" alt="This image does not exist yet" style="max-width:450px;display:block;margin-left:auto;margin-right:auto">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

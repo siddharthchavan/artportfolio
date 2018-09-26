@@ -8,9 +8,11 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Page Doesn't Exist</title>
+    <title>Home Page - Art Portfolio</title>
 
     <script src="../js/function.js"></script>
+
+    <link rel="stylesheet" href="styles/home.css" />
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -30,11 +32,11 @@
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+          <li class="nav-item active">
+            <a class="nav-link active" href="home.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="redirect.html">Favorite Work</a>
+            <a class="nav-link" href="redirect.html">Biome Report Projects</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -43,9 +45,9 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="cycle1.html">Cycle 1</a>
               <a class="dropdown-item" href="cycle2.html">Cycle 2</a>
-              <a class="dropdown-item" href="redirect.html">Cycle 3</a>
-              <a class="dropdown-item" href="redirect.html">Cycle 4</a>
-              <a class="dropdown-item" href="redirect.html">Cycle 5</a>
+              <a class="dropdown-item" href="cycle3.html">Cycle 3</a>
+              <a class="dropdown-item" href="cycle4.html">Cycle 4</a>
+              <a class="dropdown-item" href="cycle5.html">Cycle 5</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="redirect.html">Something else here</a>
             </div>
@@ -56,35 +58,69 @@
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
         </form>
       </div>
     </nav>
 
-    <main role="main">
+    <main role="main" class="bg">
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div>
+      <div class="container">
+        <br />
+        <br />
+        <br />
+        <br />
         <br />
         <br />
       </div>
 
-      <div class="jumbotron">
+      <div class="container">
         <div class="container">
-          <h1 class="display-3">This page is still in development</h1>
-          <p><a class="btn btn-primary btn-lg" href="index.html" role="button">Go back &raquo;</a></p>
+          <h1 class="display-3 main-header">Sidd's 9th grade art portfolio</h1>
+          <p class="main-text">
+            This is a collection of all my artistic works as a ninth grader. It comprises every art piece I have ever created in class while in ninth grade, and also includes some of my side projects that I do for fun.
+          </p>
+          <p><a class="btn btn-primary btn-lg" href="cycle1.html" role="button">Check it out &raquo;</a></p>
         </div>
       </div>
+
+      <div class="container">
+        <br />
+        <br />
+        <br />
+      </div>
+
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4">
+            <h2 class="side-header">Biome Report Projects</h2>
+            <p class="side-text">Work from the Mini Biome and Biome Report. </p>
+            <p><a class="btn btn-secondary" href="redirect.html" role="button">Go &raquo;</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2 class="side-header">Current Cycle</h2>
+            <p class="side-text">Work from the current cycle. </p>
+            <p><a class="btn btn-secondary" href="cycle1.html" role="button">Go &raquo;</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2 class="side-header">Side Projects</h2>
+            <p class="side-text">Just some side projects that I do for fun.</p>
+            <p><a class="btn btn-secondary" href="redirect.html" role="button">Go &raquo;</a></p>
+          </div>
+        </div>
 
         <hr>
 
       </div> <!-- /container -->
 
+      <footer class="container">
+        <p class="side-text">&copy; SC 2018-2019</p>
+      </footer>
     </main>
 
-    <footer class="container">
-      <p>&copy; SC 2018-2019</p>
-    </footer>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
